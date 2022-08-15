@@ -1,0 +1,137 @@
+@import "../css/common.css";
+@import "../css/comp_title.css";
+@import "../css/comp_nav.css";
+main {
+  padding-bottom: 7.2rem;
+}
+
+.chat-container.first {
+  margin-top: 3.4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.chat-container.first:hover {
+  background-color: rgb(248, 248, 248);
+}
+.chat-container.first .user-avatar-wrap {
+  padding: 0 0 0 2rem;
+}
+.chat-container.first .user-avatar-wrap .user-avatar {
+  width: 66px;
+  height: 66px;
+  background-color: blue;
+  border-radius: 2.2rem;
+}
+
+.chat-container {
+  padding: 1.5rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.chat-container:hover {
+  background-color: rgb(248, 248, 248);
+}
+.chat-container .user-avatar-wrap {
+  padding: 0 0 0 2rem;
+}
+.chat-container .user-avatar-wrap .user-avatar {
+  width: 66px;
+  height: 66px;
+  border-radius: 2.2rem;
+}
+
+.user-info-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.user-info-wrap .user-main-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1.6rem;
+}
+.user-info-wrap .user-main-wrap .chat-user-name {
+  font-size: 1.7rem;
+  color: rgb(25, 25, 25);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.user-info-wrap .user-main-wrap .chat-text {
+  color: rgb(153, 153, 153);
+  font-size: 1.4rem;
+}
+.user-info-wrap .user-sub-wrap {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.user-info-wrap .user-sub-wrap .chat-time {
+  color: rgb(183, 183, 183);
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "roboto";
+  margin-bottom: 0.8rem;
+}
+.user-info-wrap .user-sub-wrap .chat-count {
+  width: 23px;
+  height: 23px;
+  font-size: 1.3rem;
+  font-family: "roboto";
+  background-color: tomato;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.user-avatar.user-1 {
+  background: url(https://images.unsplash.com/photo-1633177188754-980c2a6b6266?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.user-avatar.user-2 {
+  background: url(https://images.unsplash.com/photo-1605583531014-a1857c53cd8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: 0px;
+}
+
+.user-avatar.user-3 {
+  background: url(https://images.unsplash.com/photo-1612766957962-b85888e6b83b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: -16px;
+}
+
+.user-avatar.user-4 {
+  background: url(https://images.unsplash.com/photo-1605971981986-e623e8e16f33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.user-avatar.user-5 {
+  background: url(https://images.unsplash.com/photo-1596438541521-3778fed1f293?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: -26px;
+}
+
+@media (max-width: 768px) {
+  .chat-text {
+    width: 22rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

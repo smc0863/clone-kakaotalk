@@ -1,0 +1,90 @@
+@import "../css/common.css";
+@import "variable";
+
+.header-title__wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 8rem;
+	// background-color: red;
+	.header-title {
+		font-size: 2.4rem;
+		font-weight: 400;
+		color: $font-main-color;
+		text-align: center;
+	}
+}
+
+.header-text-wrap {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 3.4rem;
+	.header-text {
+		color: $font-sub-color;
+		font-size: 1.6rem;
+		line-height: 2.5rem;
+		text-align: center;
+	}
+}
+
+.index-main {
+	margin-top: 4rem;
+	padding: 0 3rem;
+	.login-wrap {
+		display: flex;
+		flex-direction: column;
+		.login-email,
+		.login-password {
+			width: 100%;
+			color: rgb(146, 146, 146);
+			font-size: 1.7rem;
+			border-bottom: 0.1rem solid $font-sub-color;
+			padding-bottom: 2rem;
+			font-weight: 400;
+			font-family: inherit;
+			transition: all 0.2s linear;
+			&:focus {
+				border-bottom-color: $brand-color;
+			}
+			&:first-child {
+				margin-bottom: 2.5rem;
+			}
+		}
+	}
+}
+
+#login-form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .btn-login,
+    .btn-signup {
+		width: 100%;
+		font-size: 1.7rem;
+		background-color: rgb(250, 225, 0);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0.5rem;
+		font-weight: 400;
+		font-family: inherit;
+		cursor: pointer;
+	}
+    .btn-login {
+		margin-top: 4rem;
+		margin-bottom: 1.6rem;
+		padding: 1.6rem 0rem;
+	}
+	.btn-signup {
+		padding: 2rem 0rem;
+	}
+}
+
+.find-account {
+    margin-top: 2.4rem;
+    text-align: center;
+    font-size: 1.4rem;
+}

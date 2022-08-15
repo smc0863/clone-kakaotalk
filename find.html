@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>친구 찾기</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/find.css" />
+	</head>
+	<body>
+	<!-- 프로필 영역 -->
+	<header>
+		<h1 class="hidden">카카오톡</h1>
+		<div class="header-wrap">
+			<div class="header-title"><h2><span>찾기</span></h2></div>
+			<div class="header-icon">
+				<ul class="icon-list">
+					<li>
+						<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-solid fa-gear"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!--/ 프로필 영역  -->
+
+	<main>
+		<!-- 찾기 아이콘 영역 -->
+		<section class="find-icon">
+			<h2 class="hidden">친구 찾기</h2>
+			<div class="icon-container">
+				<h3 class="hidden">QR코드로 찾기</h3>
+				<div class="icon-box__1">
+					<ul class="icon-box-list">
+						<a href="#">
+							<li>
+								<span class="icon-box-icon"><i class="fa-solid fa-qrcode fa-5x"></i></span>
+								<span class="icon-box-text">QR코드</span>
+							</li>
+						</a>
+					</ul>
+				</div>
+				<h3 class="hidden">연락처로 찾기</h3>
+				<div class="icon-box__2">
+					<ul class="icon-box-list">
+						<a href="#">
+							<li>
+								<span class="icon-box-icon"><i class="fa-solid fa-address-book fa-5x"></i></span>
+								<span class="icon-box-text">연락처로 추가</span>
+							</li>
+						</a>
+					</ul>
+				</div>
+				<h3 class="hidden">ID로 찾기</h3>
+				<div class="icon-box__3">
+					<ul class="icon-box-list">
+						<a href="#">	
+							<li>
+								<span class="icon-box-icon"><i class="fa-solid fa-circle-plus fa-5x"></i></span>
+								<span class="icon-box-text">ID로 추가</span>
+							</li>
+						</a>
+					</ul>
+				</div>
+				<h3 class="hidden">초대하기</h3>
+				<div class="icon-box__4">
+					<ul class="icon-box-list">
+						<a href="#">
+							<li>
+								<span class="icon-box-icon"><i class="fa-solid fa-envelope fa-5x"></i></span>
+								<span class="icon-box-text">초대하기</span>
+							</li>
+						</a>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--/ 찾기 아이콘 영역 -->
+
+		<!-- 친구 추천 영역 -->
+		<section class="recommended">
+			<div class="content-container">
+				<div class="content-wrap">
+					<div class="content-head"><h3><p>친구 추천</p></h3></div>
+					<div class="content-body"><p>추천할 친구가 없습니다.</p></div>
+				</div>
+			</div>	
+		</section>
+		<!--/ 친구 추천 영역 -->
+
+		<!-- 오픈채팅 영역 -->
+		<section class="open-chat">
+			<div class="open-container">
+				<div class="open-head">
+					<div class="open-title"><h3><p>오픈채팅</p></h3></div>
+					<div class="open-home"><a href="#"><p>홈으로 이동</p><i class="fa-solid fa-chevron-right"></i></a></div>
+				</div>
+			</div>
+			<div class="open-wrap" tabindex="0">
+				<div class="open-body">
+					<div class="open-body__column">
+						<div class="body-text-wrap">
+							<h4><p class="text-title">방탄소년단 팬카페</p></h4>
+							<ul class="hash-list text-hash">
+								<li>#BTS</li>
+								<li>#Army</li>
+								<li>#Friends</li>
+							</ul>
+							<ul class="text-member-wrap">
+								<li><span class="member-img bts"></span></li>
+								<li><span class="text-count">898</span></li>
+								<li><span class="text-members">members |&nbsp;</span></li>
+								<li><span class="active">active</span></li>
+							</ul>
+						</div>
+						<div class="body-screen-wrap">
+							<span class="screen-thumb bts"><button tabindex="-1" class="btn-like"><span class="thumb-like"><i class="fa-solid fa-heart"></i>1815</span></button></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="open-wrap" tabindex="0">
+				<div class="open-body border">
+					<div class="open-body__column">
+						<div class="body-text-wrap">
+							<h4><p class="text-title">먹기위해 운동하는 사람들</p></h4>
+							<ul class="hash-list text-hash">
+								<li>#Health</li>
+								<li>#Climb</li>
+								<li>#Running</li>
+							</ul>
+							<ul class="text-member-wrap">
+								<li><span class="member-img exercise"></span></li>
+								<li><span class="text-count">58</span></li>
+								<li><span class="text-members">members |&nbsp;</span></li>
+								<li><span class="active">active</span></li>
+							</ul>
+						</div>
+						<div class="body-screen-wrap">
+							<span class="screen-thumb exercise"><button tabindex="-1" class="btn-like"><span class="thumb-like"><i class="fa-solid fa-heart"></i>215</span></button></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ 오픈채팅 영역 -->
+	</main>
+
+    <!--하단 네비게이션 메뉴-->
+    <nav class="mainmenu">
+		<h2 class="hidden">전체 메뉴</h2>
+		<ul class="mainmenu-list">
+			<a href="friend.html">
+				<li>
+					<i class="fa-solid fa-user"></i>
+				</li>
+			</a>	
+			<a href="chat.html">
+				<li>
+				<i class="fa-regular fa-comment"></i>
+				<span>5</span>
+				</li>
+			</a>
+			<a href="find.html">
+				<li>
+				<i class="fa-solid fa-magnifying-glass"></i>
+				</li>
+			</a>
+			<a href="#">
+				<li>
+					<i class="fa-solid fa-ellipsis"></i>
+				</li>
+			</a>
+		</ul>
+    </nav>
+    <!--/하단 네비게이션 메뉴-->
+</html>

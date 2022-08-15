@@ -1,0 +1,295 @@
+@import "../css/common.css";
+@import "../css/comp_title.css";
+@import "../css/comp_nav.css";
+@import "variable";
+
+span {
+	display: block;
+}
+
+.fa-ellipsis{
+	&::after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: tomato;
+	top: -2px;
+	right: -5px;
+	}
+}
+
+.fa-gear {
+	&::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: tomato;
+	top: -6px;
+	right: -6px;
+	}
+}
+
+main{
+	padding-bottom: 7.2rem;
+}
+
+.find-icon{
+	width: 100%;
+	padding: $padding;
+	box-sizing: border-box;
+	// background-color: blue;
+	margin-top: 2.3rem;
+	.icon-container {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		// background-color: red;
+	}
+}
+
+.icon-box-list{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	// background-color: blue;
+	li{
+		text-align: center;
+		.icon-box-icon{
+			padding-top: 1.6rem;
+		}
+		.icon-box-text {
+			font-size: 1.3rem;
+			color: $font-main-color;
+			// background-color: red;
+			font-weight: 400;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 1.4rem;
+		}
+	}
+}
+
+.recommended {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 2rem 0 2rem 0;
+	padding: $padding;
+	// background-color: red;
+	.content-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	    // background-color: red;
+		border-top: 1px solid $font-sub2-color;
+		border-bottom: 1px solid $font-sub2-color;
+		.content-wrap {
+			width: 100%;
+			height: 100%;
+			.content-head {
+				margin-top: 2rem;
+				p {
+					font-size: 1.4rem;
+					color: $font-sub-color;
+					font-weight: 400;
+				}
+			}
+			.content-body {
+				display: flex;
+				justify-content: center;
+				p {
+					padding: 11rem 0;
+					font-size: 1.6rem;
+					color: $font-sub-color;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
+
+.open-chat {
+	width: 100%;
+	.open-container {
+		width: 100%;
+		box-sizing: border-box;
+			padding: $padding;
+		.open-head {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			.open-title {
+				p {
+					font-size: 1.4rem;
+					color: $font-sub-color;
+					font-weight: 400;
+				}
+			}
+			.open-home {
+				font-size: 1.4rem;
+				color: $font-sub-color;
+				font-weight: 400;
+				margin-bottom: 1rem;
+				a {
+					display: flex;
+					align-items: center;
+					color: $font-sub2-color;
+					p {
+						margin-right: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.open-wrap {
+	box-sizing: border-box;
+	padding: $padding;
+	// background-color: red;
+	&:hover {
+		background-color: rgb(248, 248, 248);
+	}
+}
+
+.open-body.border{
+	border: none;
+}
+.open-body{
+	width: 100%;
+	// background-color: red;
+	display: flex;
+	flex-direction: column;
+	padding: 1.4rem 0;
+	border-bottom: 1px solid $font-sub2-color;
+	.open-body__column{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.body-text-wrap{
+			display: flex;
+			flex-direction: column;
+			.text-title{
+				font-size: 1.6rem;
+				color: $font-main-color;
+				font-weight: 500;
+			}
+			.text-hash{
+				font-size: 1.4rem;
+				padding: 1.3rem 0 0.7rem 0;
+				font-weight: 400;
+				color: $font-sub2-color;
+				font-family: 'roboto';
+			}
+		}
+	}
+}
+
+.hash-list{
+	display: flex;
+	align-items: center;
+	li{
+		margin-right: 0.5rem;
+		&:last-child{
+			margin: 0rem;
+		}
+	}
+}
+
+.text-member-wrap{
+	display: flex;
+	align-items: center;
+	font-size: 1.3rem;
+		font-family: 'roboto';
+		font-weight: 400;
+		color: $font-sub2-color;
+	.member-img{
+		width: 1.8rem;
+		height: 1.8rem;
+		background-color: blue;
+		border-radius: 40%;
+		margin-right: 0.6rem;
+	}
+	.member-img.bts{
+		background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%E2%80%98LG_Q7_BTS_%EC%97%90%EB%94%94%EC%85%98%E2%80%99_%EC%98%88%EC%95%BD_%ED%8C%90%EB%A7%A4_%EC%8B%9C%EC%9E%91_%2842773472410%29_%28cropped%29.jpg/640px-%E2%80%98LG_Q7_BTS_%EC%97%90%EB%94%94%EC%85%98%E2%80%99_%EC%98%88%EC%95%BD_%ED%8C%90%EB%A7%A4_%EC%8B%9C%EC%9E%91_%2842773472410%29_%28cropped%29.jpg) no-repeat center;
+		background-size: cover;
+	}
+	.member-img.exercise{
+		background:url(https://src.hidoc.co.kr/image/lib/2020/9/15/1600136992460_0.jpg) no-repeat center;
+		background-size: cover;
+	}
+	.text-count{
+		margin-right: 0.2rem;
+	}
+	.text-members{
+		font-size: 1.3rem;
+		font-family: 'roboto';
+		font-weight: 400;
+		color: $font-sub2-color;
+	}
+	.active{
+		text-transform: capitalize;
+		font-size: 1.3rem;
+		color: rgb(255, 93, 193);
+		font-family: 'roboto';
+		font-weight: 400;
+	}
+}
+
+.body-screen-wrap{
+	.screen-thumb{
+		width: 10rem;
+		height: 10rem;
+		border-radius: 16%;
+		// background-color: blue;
+		position: relative;
+	}
+	.screen-thumb.bts{
+		background:url(https://www.pinkvilla.com/files/bts_proof_door_main_3_0_0.jpg) no-repeat center;
+		background-size: cover;
+	}
+	.screen-thumb.exercise{
+		background:url(https://jhealthfile.joins.com/photo//2019/08/23/1341667168449.jpg) no-repeat center;
+		background-size: cover;
+	}
+}
+
+.body-screen-wrap{
+	.screen-thumb{
+		position: relative;
+		.btn-like{
+			cursor: pointer;
+			border: 0;
+			// background-color: transparent;
+			background-color: transparent;
+			.thumb-like{
+				padding: 0.4rem 0.8rem;
+				background-color:rgba(0, 0, 0, 0.5);
+				border-radius: 20px;
+				position: absolute;
+				right: 0.5rem;
+				bottom: 0.5rem;
+				color: white;
+				font-size: 1.2rem;
+				font-family: 'roboto';
+				font-weight: 300;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				i{
+					font-size: 1rem;
+					position: relative;
+					bottom: 0.05rem;
+					margin-right: 0.3rem;
+				}
+			}
+		}
+	}
+}

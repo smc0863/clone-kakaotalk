@@ -1,0 +1,89 @@
+@import "../css/common.css";
+.header-title__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8rem;
+}
+.header-title__wrap .header-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: rgb(25, 25, 25);
+  text-align: center;
+}
+
+.header-text-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3.4rem;
+}
+.header-text-wrap .header-text {
+  color: rgb(153, 153, 153);
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.index-main {
+  margin-top: 4rem;
+  padding: 0 3rem;
+}
+.index-main .login-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.index-main .login-wrap .login-email,
+.index-main .login-wrap .login-password {
+  width: 100%;
+  color: rgb(146, 146, 146);
+  font-size: 1.7rem;
+  border-bottom: 0.1rem solid rgb(153, 153, 153);
+  padding-bottom: 2rem;
+  font-weight: 400;
+  font-family: inherit;
+  transition: all 0.2s linear;
+}
+.index-main .login-wrap .login-email:focus,
+.index-main .login-wrap .login-password:focus {
+  border-bottom-color: rgb(250, 225, 0);
+}
+.index-main .login-wrap .login-email:first-child,
+.index-main .login-wrap .login-password:first-child {
+  margin-bottom: 2.5rem;
+}
+
+#login-form {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#login-form .btn-login,
+#login-form .btn-signup {
+  width: 100%;
+  font-size: 1.7rem;
+  background-color: rgb(250, 225, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-weight: 400;
+  font-family: inherit;
+  cursor: pointer;
+}
+#login-form .btn-login {
+  margin-top: 4rem;
+  margin-bottom: 1.6rem;
+  padding: 1.6rem 0rem;
+}
+#login-form .btn-signup {
+  padding: 2rem 0rem;
+}
+
+.find-account {
+  margin-top: 2.4rem;
+  text-align: center;
+  font-size: 1.4rem;
+}

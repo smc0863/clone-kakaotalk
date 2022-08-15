@@ -1,0 +1,26 @@
+@import "variable";
+
+header {
+	padding-top: 2.1rem;
+	color: rgb(22, 22, 22);
+	.header-wrap {
+		padding: $padding;
+		display: flex;
+		justify-content: space-between;
+		.header-title {
+			font-weight: 600;
+			font-size: 2.6rem;
+		}
+		.icon-list {
+			display: flex;
+			li {
+				position: relative;
+				font-size: 2.1rem;
+				margin-right: 2.7rem;
+				&:last-child {
+				margin-right: 0px;
+				}
+			}
+		}
+	}
+}

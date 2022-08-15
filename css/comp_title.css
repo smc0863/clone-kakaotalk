@@ -1,0 +1,24 @@
+header {
+  padding-top: 2.1rem;
+  color: rgb(22, 22, 22);
+}
+header .header-wrap {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+header .header-wrap .header-title {
+  font-weight: 600;
+  font-size: 2.6rem;
+}
+header .header-wrap .icon-list {
+  display: flex;
+}
+header .header-wrap .icon-list li {
+  position: relative;
+  font-size: 2.1rem;
+  margin-right: 2.7rem;
+}
+header .header-wrap .icon-list li:last-child {
+  margin-right: 0px;
+}

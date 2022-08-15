@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KakaoTalk</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+	<header>
+		<h1 class="hidden">카카오톡</h1>
+		<div class="header-title__wrap">
+			<h2 class="hidden">로그인 페이지</h2>
+			<p class="header-title">카카오톡에 오신 걸 환영합니다!</p>
+			<div class="header-text-wrap">
+				<p class="header-text">카카오 계정을 가지고 있다면,</p>
+				<p class="header-text">이메일이나 전화번호로 로그인하세요.</p>
+			</div>
+		</div>
+	</header>
+
+	<main class="index-main">
+		<h3 class="hidden">로그인/회원가입</h3>
+		<div class="login-wrap">
+			<form action="friend.html" method="get" id="login-form">
+				<input name="id" class="login-email" type="email" placeholder="이메일 또는 전화번호"/>
+				<input name="password" class="login-password" type="password" placeholder="비밀번호" minlength="4"/>
+				<input class="btn-login" type="submit" value="로그인" />
+				<!-- <input class="btn-signup" type="submit" value="회원가입" /> -->
+				<a class="btn-signup" href="#">회원가입</a>
+			</form>
+		</div>
+
+		<div class="find-account">
+			<h3><a href="#">아이디/비밀번호 찾기</a></h3>
+		</div>
+	</main>
+</body>
+</html>

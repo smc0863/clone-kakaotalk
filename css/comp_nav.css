@@ -1,0 +1,36 @@
+.mainmenu {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(236, 236, 236);
+  border-top: 1px solid rgb(225, 225, 225);
+}
+.mainmenu .mainmenu-list {
+  width: 80%;
+  margin: 0px auto;
+  padding: 1.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+}
+.mainmenu .mainmenu-list li {
+  font-size: 3.3rem;
+  position: relative;
+}
+.mainmenu .mainmenu-list li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: tomato;
+  position: absolute;
+  bottom: 16px;
+  left: 17px;
+  font-size: 1.3rem;
+  color: white;
+  font-family: "roboto";
+}
