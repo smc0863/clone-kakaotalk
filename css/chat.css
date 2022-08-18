@@ -76,12 +76,12 @@ main {
   text-align: right;
   font-weight: 400;
   font-family: "roboto";
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 .user-info-wrap .user-sub-wrap .chat-count {
-  width: 23px;
-  height: 23px;
-  font-size: 1.3rem;
+  width: 20px;
+  height: 20px;
+  font-size: 1.1rem;
   font-family: "roboto";
   background-color: tomato;
   color: white;
