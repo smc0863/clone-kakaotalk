@@ -72,6 +72,8 @@ main {
 .user-info-wrap .user-sub-wrap .chat-time {
   color: rgb(183, 183, 183);
   font-size: 1.25rem;
+  width: 3rem;
+  text-align: right;
   font-weight: 400;
   font-family: "roboto";
   margin-bottom: 0.8rem;
