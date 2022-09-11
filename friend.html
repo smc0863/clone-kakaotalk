@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KakaoTalk</title>
+    <title>KakaoTalk Friend</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/friend.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"/>
@@ -152,31 +152,20 @@
     </main>
 
     <!--하단 네비게이션 메뉴-->
-    <nav class="mainmenu">
-		<h2 class="hidden">전체 메뉴</h2>
-		<ul class="mainmenu-list">
-			<a href="friend.html">
-				<li>
-					<i class="fa-solid fa-user"></i>
-				</li>
-			</a>	
-			<a href="chat.html">
-				<li>
-				<i class="fa-regular fa-comment"></i>
-				<span>5</span>
-				</li>
-			</a>
-			<a href="find.html">
-				<li>
-				<i class="fa-solid fa-magnifying-glass"></i>
-				</li>
-			</a>
-			<a href="#">
-				<li>
-					<i class="fa-solid fa-ellipsis"></i>
-				</li>
-			</a>
-		</ul>
+    <nav class="navi-wrap">
+		<div class="navi-head">
+			<h2 class="navi-subject"><span class="navi-name">전체메뉴</span></h2>
+		</div>
+		<div class="navi-body">
+			<div class="gnb-wrap">
+				<ul class="gnb-list">
+					<li class="gnb-item"><a href="friend.html" class="gnb-friend"></a></li>
+					<li class="gnb-item"><a href="chat.html" class="gnb-chat"><span class="chat-count">5</span></a></li>
+					<li class="gnb-item"><a href="find.html" class="gnb-find"></a></li>
+					<li class="gnb-item"><a href="more.html" class="gnb-more"></a></li>
+				</ul>
+			</div>
+		</div>
     </nav>
     <!--/하단 네비게이션 메뉴-->
 </body>

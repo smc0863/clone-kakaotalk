@@ -4,6 +4,10 @@
 a {
 	text-decoration: none;
 	color: $font-main-color;
+
+	:focus{
+		outline: none;
+	}
 }
 
 input {
@@ -22,7 +26,7 @@ input {
 html,
 body {
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	font-size: 62.5%;
 	font-family: "noto sans kr";
 	position: relative;

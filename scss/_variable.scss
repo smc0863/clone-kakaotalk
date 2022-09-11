@@ -23,3 +23,11 @@ $padding: 0 2rem;
 		}
 	}
 }
+
+@mixin hidden{
+	font-size: 0px;
+	line-height: 0px;
+	width: 1px;
+	height: 1px;
+	position: absolute;
+}

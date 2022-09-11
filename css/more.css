@@ -1,0 +1,236 @@
+@import "../css/comp_nav_more.css";
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+wbr {
+  display: block;
+}
+
+html {
+  font-size: 1px;
+  -webkit-text-size-adjust: none;
+}
+html body {
+  font-size: 16rem;
+  font-family: "noto sans kr";
+  height: 100vh;
+  position: relative;
+}
+html .wrap {
+  width: 100%;
+  height: 100%;
+  padding: 0 20rem;
+  box-sizing: border-box;
+}
+html .wrap .page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-wrap {
+  width: 100%;
+  margin-top: 21rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-wrap .page-head .page-subject .page-name {
+  font-size: 26rem;
+  font-weight: 600;
+}
+
+.section.page-util .icon-area .icon-list {
+  display: flex;
+  font-size: 21rem;
+  gap: 27rem;
+}
+.section.page-util .icon-area .icon-list .icon-item:last-child .icon-name i {
+  position: relative;
+}
+.section.page-util .icon-area .icon-list .icon-item:last-child .icon-name i::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: tomato;
+  top: -6px;
+  right: -6px;
+}
+
+.page-body {
+  width: 100%;
+  margin-top: 46rem;
+}
+.page-body .local .local-head {
+  font-size: 0px;
+  line-height: 0px;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+
+.local-body .section.profile .profile-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.local-body .section.profile .profile-wrap .profile-column.first .profile-photo {
+  width: 70rem;
+  height: 70rem;
+  border-radius: 22rem;
+  overflow: hidden;
+}
+.local-body .section.profile .profile-wrap .profile-column.first .profile-photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-column.second {
+  width: 100%;
+}
+.profile-column.second .profile-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-column.second .profile-data .profile-info {
+  margin-left: 14rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+.profile-column.second .profile-data .profile-info .profile-name {
+  font-size: 22rem;
+  font-weight: bold;
+}
+.profile-column.second .profile-data .profile-info .profile-phone {
+  color: #aaa;
+  font-size: 14rem;
+  font-weight: 400;
+}
+.profile-column.second .profile-data .profile-info .profile-phone i {
+  font-size: 14rem;
+  margin-left: 6rem;
+  color: tomato;
+}
+.profile-column.second .profile-data .profile-icon .icon-name i {
+  font-size: 30rem;
+}
+
+.section.function .func-wrap .func-head {
+  font-size: 0px;
+  line-height: 0px;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+
+.func-body {
+  width: 100%;
+  height: auto;
+  padding-bottom: 46rem;
+  border-bottom: 1px solid rgb(183, 183, 183);
+}
+.func-body .func-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 46rem;
+  row-gap: 54rem;
+}
+.func-body .func-area .func-item {
+  flex-basis: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14rem;
+  position: relative;
+}
+.func-body .func-area .func-item .data-head {
+  font-size: 0px;
+  line-height: 0px;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+.func-body .func-area .func-item .data-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14rem;
+}
+.func-body .func-area .func-item .data-body span {
+  font-size: 34rem;
+  color: rgb(20, 20, 20);
+}
+.func-body .func-area .func-item .data-body a {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 14rem;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
+  color: rgb(55, 55, 55);
+}
+.func-body .func-area .func-item .data-body a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+.section.suggestions .sug-wrap .sug-head {
+  margin: 30rem 0;
+}
+.section.suggestions .sug-wrap .sug-head .sug-subject .sug-name {
+  font-size: 18rem;
+}
+
+.sug-body {
+  width: 100%;
+}
+.sug-body .sug-area {
+  display: flex;
+}
+.sug-body .sug-area .sug-item {
+  flex-basis: 25%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.sug-body .sug-area .sug-item .app-head {
+  font-size: 0px;
+  line-height: 0px;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+.sug-body .sug-area .sug-item .app-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14rem;
+  position: relative;
+}
+.sug-body .sug-area .sug-item .app-body .sug-story i {
+  font-size: 35rem;
+}
+.sug-body .sug-area .sug-item .app-body .sug-text {
+  color: rgb(55, 55, 55);
+}
+.sug-body .sug-area .sug-item .app-body .sug-text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>친구 찾기</title>
+		<title>KakaoTalk Find</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/find.css" />
@@ -14,7 +14,9 @@
 	<header>
 		<h1 class="hidden">카카오톡</h1>
 		<div class="header-wrap">
-			<div class="header-title"><h2><span>찾기</span></h2></div>
+			<div class="header-title">
+				<h2><span>찾기</span></h2>
+			</div>
 			<div class="header-icon">
 				<ul class="icon-list">
 					<li>
@@ -152,31 +154,63 @@
 	</main>
 
     <!--하단 네비게이션 메뉴-->
-    <nav class="mainmenu">
-		<h2 class="hidden">전체 메뉴</h2>
-		<ul class="mainmenu-list">
-			<a href="friend.html">
-				<li>
-					<i class="fa-solid fa-user"></i>
-				</li>
-			</a>	
-			<a href="chat.html">
-				<li>
-				<i class="fa-regular fa-comment"></i>
-				<span>5</span>
-				</li>
-			</a>
-			<a href="find.html">
-				<li>
-				<i class="fa-solid fa-magnifying-glass"></i>
-				</li>
-			</a>
-			<a href="#">
-				<li>
-					<i class="fa-solid fa-ellipsis"></i>
-				</li>
-			</a>
-		</ul>
+    <nav class="navi-wrap">
+		<div class="navi-head">
+			<h2 class="navi-subject"><span class="navi-name">전체메뉴</span></h2>
+		</div>
+		<div class="navi-body">
+			<div class="gnb-wrap">
+				<ul class="gnb-list">
+					<li class="gnb-item"><a href="friend.html" class="gnb-friend"></a></li>
+					<li class="gnb-item"><a href="chat.html" class="gnb-chat"><span class="chat-count">5</span></a></li>
+					<li class="gnb-item"><a href="find.html" class="gnb-find"></a></li>
+					<li class="gnb-item"><a href="more.html" class="gnb-more"></a></li>
+				</ul>
+			</div>
+		</div>
     </nav>
     <!--/하단 네비게이션 메뉴-->
+	</body>
 </html>
+
+<!-- .mainmenu {
+	width: 100%;
+	// background-color: red;
+	position: fixed;
+	bottom: 0px;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(236, 236, 236);
+	border-top: 1px solid rgb(225, 225, 225);
+
+	.mainmenu-list {
+		width: 80%;
+		margin: 0px auto;
+		padding: 1.8rem 2rem;
+		display: flex;
+		justify-content: space-between;
+		// background-color: blue;
+		display: flex;
+
+		li {
+			font-size: 2.8rem;
+			position: relative;
+
+			span {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background-color: tomato;
+				position: absolute;
+				bottom: 15px;
+				left: 15px;
+				font-size: 1.1rem;
+				color: white;
+				font-family: "roboto";
+			}
+		}
+	}
+} -->

@@ -1,0 +1,295 @@
+@import "../css/comp_nav_more.css";
+@import "variable";
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+wbr{
+    display: block;
+}
+
+html{
+    font-size: 1px;
+    -webkit-text-size-adjust: none;
+
+    body{
+        font-size: 16rem;
+        font-family: "noto sans kr";
+        height: 100vh;
+        position: relative;
+
+    }
+
+    .wrap{
+        width: 100%;
+        height: 100%;
+        padding: 0 20rem;
+        box-sizing: border-box;
+    
+        .page{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.page-wrap{
+    width: 100%;
+    margin-top: 21rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .page-head{
+        .page-subject{
+            .page-name{
+                font-size: 26rem;
+                font-weight: 600;
+
+            }
+        }
+    }
+}
+
+.section.page-util{
+    .icon-area{
+        .icon-list{
+            display: flex;
+            font-size: 21rem;
+            gap: 27rem;
+
+            .icon-item{
+                &:last-child{
+                    .icon-name{
+                        i{
+                            position: relative;
+                            &::after{
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                width: 6px;
+                                height: 6px;
+                                border-radius: 50%;
+                                background-color: tomato;
+                                top: -6px;
+                                right: -6px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-body{
+    width: 100%;
+    margin-top: 46rem;
+
+    .local{
+        .local-head{
+            @include hidden;
+        }
+    }
+}
+
+.local-body{
+    .section.profile{
+        .profile-wrap{
+            width: 100%;
+            display: flex;
+            justify-content: space-between ;
+            align-items: center;
+
+            .profile-column.first{
+                .profile-photo{
+                    width: 70rem;
+                    height: 70rem;
+                    border-radius: 22rem;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.profile-column.second{
+    width: 100%;
+
+    .profile-data{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .profile-info{
+            margin-left: 14rem;
+            display: flex;
+            flex-direction: column;
+            gap: 12rem;
+
+            .profile-name{
+                font-size: 22rem;
+                font-weight: bold;
+            }
+
+            .profile-phone{
+                color: #aaa;
+                font-size: 14rem;
+                font-weight: 400;
+
+                i{
+                    font-size: 14rem;
+                    margin-left: 6rem;
+                    color: tomato;
+                }
+            }
+        }
+
+        .profile-icon{
+            .icon-name{
+
+                i{
+                    font-size: 30rem;
+                }
+
+            }
+        }
+    }
+}
+
+.section.function{
+    .func-wrap{
+        .func-head{
+            @include hidden;
+        }
+    }
+}
+
+.func-body{
+    width: 100%;
+    height: auto;
+    padding-bottom: 46rem;
+    border-bottom: 1px solid $font-sub2-color;
+
+    .func-area{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 46rem;
+        row-gap: 54rem;
+
+        .func-item{
+            flex-basis:25%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            // background-color: red;
+            row-gap: 14rem;
+            position: relative;
+
+            .data-head{
+                @include hidden;
+            }
+
+            .data-body{
+                display: flex;
+                flex-direction: column;
+                row-gap: 14rem;
+
+                span{
+                    font-size: 34rem;
+                    color: rgb(20, 20, 20);
+                }
+    
+                a{
+                    font-family: 'roboto';
+                    font-weight: 400;
+                    font-size: 14rem;
+                    letter-spacing: 0.3rem;
+                    text-transform: capitalize;
+                    color: rgb(55, 55, 55);
+    
+                    &::after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0px;
+                        bottom: 0px;
+                        right: 0px;
+                        left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section.suggestions{
+    .sug-wrap{
+        .sug-head{
+            margin: 30rem 0;
+
+            .sug-subject{
+                .sug-name{
+                    font-size: 18rem;
+
+                }
+            }
+        }
+    }
+}
+
+.sug-body{
+    width: 100%;
+
+    .sug-area{
+        display: flex;
+
+        .sug-item{
+            flex-basis: 25%;
+            text-align: center;
+            text-transform: capitalize;
+
+            .app-head{
+                @include hidden;
+            }
+
+            .app-body{
+                display: flex;
+                flex-direction: column;
+                row-gap: 14rem;
+                position: relative;
+
+                .sug-story{
+                    i{
+                        font-size: 35rem;
+                    }
+                }
+                .sug-text{
+                    color: rgb(55, 55, 55);
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0px;
+                        bottom: 0px;
+                        left: 0px;
+                        right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

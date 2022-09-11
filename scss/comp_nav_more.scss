@@ -4,6 +4,7 @@
 	width: 100%;
 	position: fixed;
 	bottom: 0px;
+	border-top: 1px solid rgb(225, 225, 225);
 
 	.navi-head{
 		@include hidden;
@@ -26,25 +27,43 @@
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					padding: 1.3rem;
+					padding: 13rem;
 
 					.gnb-friend{
 						&::after{
 							content: '';
 							display: block;
-							width: 4rem;
-							height: 4rem;
-							background: url(../svg/profile_line.svg) no-repeat center;
+							width: 40rem;
+							height: 40rem;
+							background: url(../svg/friend_fill.svg) no-repeat center;
 
 						}
 					}
 
 					.gnb-chat{
+						position: relative;
+
+						.chat-count{
+							width: 22px;
+							height: 22px;
+							border-radius: 50%;
+							background-color: tomato;
+							position: absolute;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							color: white;
+							font-size: 12rem;
+							right: -5rem;
+							top: -2rem;
+							font-family: 'roboto';
+						}
+
 						&::after{
 							content: '';
 							display: block;
-							width: 4rem;
-							height: 4rem;
+							width: 40rem;
+							height: 40rem;
 							background: url(../svg/chat_line.svg) no-repeat center;
 
 						}
@@ -54,9 +73,9 @@
 						&::after{
 							content: '';
 							display: block;
-							width: 4rem;
-							height: 4rem;
-							background: url(../svg/search_line.svg) no-repeat center;
+							width: 40rem;
+							height: 40rem;
+							background: url(../svg/find_line.svg) no-repeat center;
 
 						}
 					}
@@ -65,9 +84,9 @@
 						&::after{
 							content: '';
 							display: block;
-							width: 4rem;
-							height: 4rem;
-							background: url(../svg/more_line.svg) no-repeat center;
+							width: 40rem;
+							height: 40rem;
+							background: url(../svg/more_fill.svg) no-repeat center;
 
 						}
 					}

@@ -33,6 +33,7 @@ body {
   width: 100%;
   position: fixed;
   bottom: 0px;
+  border-top: 1px solid rgb(225, 225, 225);
 }
 .navi-wrap .navi-head {
   font-size: 0px;
@@ -65,7 +66,25 @@ body {
   display: block;
   width: 4rem;
   height: 4rem;
-  background: url(../svg/profile_line.svg) no-repeat center;
+  background: url(../svg/friend_fill.svg) no-repeat center;
+}
+.navi-wrap .navi-body .gnb-wrap .gnb-list .gnb-item .gnb-chat {
+  position: relative;
+}
+.navi-wrap .navi-body .gnb-wrap .gnb-list .gnb-item .gnb-chat .chat-count {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: tomato;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  right: -0.5rem;
+  top: -0.2rem;
+  font-family: "roboto";
 }
 .navi-wrap .navi-body .gnb-wrap .gnb-list .gnb-item .gnb-chat::after {
   content: "";
@@ -79,7 +98,7 @@ body {
   display: block;
   width: 4rem;
   height: 4rem;
-  background: url(../svg/search_line.svg) no-repeat center;
+  background: url(../svg/find_line.svg) no-repeat center;
 }
 .navi-wrap .navi-body .gnb-wrap .gnb-list .gnb-item .gnb-more::after {
   content: "";
