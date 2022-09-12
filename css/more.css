@@ -176,7 +176,10 @@ html .wrap .page {
   font-size: 14rem;
   letter-spacing: 0.3rem;
   text-transform: capitalize;
-  color: rgb(55, 55, 55);
+  color: rgb(130, 130, 130);
+}
+.func-body .func-area .func-item .data-body a:hover {
+  color: rgb(25, 25, 25);
 }
 .func-body .func-area .func-item .data-body a::after {
   content: "";
@@ -223,7 +226,12 @@ html .wrap .page {
   font-size: 35rem;
 }
 .sug-body .sug-area .sug-item .app-body .sug-text {
-  color: rgb(55, 55, 55);
+  color: rgb(130, 130, 130);
+  font-weight: 400;
+  font-family: "roboto";
+}
+.sug-body .sug-area .sug-item .app-body .sug-text:hover {
+  color: rgb(25, 25, 25);
 }
 .sug-body .sug-area .sug-item .app-body .sug-text::after {
   content: "";
