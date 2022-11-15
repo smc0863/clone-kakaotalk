@@ -76,6 +76,7 @@ main {
   font-weight: 400;
   font-family: "roboto";
   margin-bottom: 1rem;
+  width: 3rem;
 }
 .user-info-wrap .user-sub-wrap .chat-count {
   width: 22px;
